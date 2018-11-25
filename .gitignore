@@ -1,3 +1,4 @@
 data/*
 models/*
 tb_logs/*
+attention_seq2seq
