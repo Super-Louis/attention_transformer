@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Author  : Super~Super
-# FileName: attentions.py
+# FileName: layers.py
 # Python  : python3.6
 # Time    : 18-11-23 11:36
 
