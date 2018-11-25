@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Author  : Super~Super
-# FileName: seq2seq_model.py
+# FileName: seq2seq.py
 # Python  : python3.6
 # Time    : 18-11-23 11:42
 from layers import *

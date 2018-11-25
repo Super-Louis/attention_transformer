@@ -12,7 +12,7 @@ from keras.utils import to_categorical
 import keras.backend as K
 from gensim.models import word2vec
 from sklearn.utils import shuffle
-from seq2seq_model import Encoder, Decoder
+from seq2seq import Encoder, Decoder
 from keras import optimizers
 from keras.models import Model
 from keras.callbacks import TensorBoard, ModelCheckpoint
