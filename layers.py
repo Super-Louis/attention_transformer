@@ -195,7 +195,7 @@ class Attention(Layer):
 
 
 class LayerNormalization(Layer):
-    """normalization for each attention_sub layer and point_wise_forward sub_layer
+    """Normalization for each attention sublayer and point_wise_forward sublayer
     """
 
     def __init__(self, eps=1e-6, residual=True, **kwargs):
@@ -215,7 +215,7 @@ class LayerNormalization(Layer):
 
     def call(self, inputs, **kwargs):
         if self.residual:
-            # residual connection which adds the output of the layer and the import of the layer
+            # residual connection which adds the output of the layer and the input of the layer
             inputs = inputs[0] + inputs[1]
         mean = K.mean(inputs, axis=-1, keepdims=True)
         std = K.std(inputs, axis=-1, keepdims=True)
