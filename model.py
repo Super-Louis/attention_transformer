@@ -98,14 +98,14 @@ def train():
     encoder_input = Input(shape=(config['max_num'],), name='encode_input')
     embedded_input = Embedding(config['en_voc_size'], 300, weights=[en_w2v_matrix], trainable=False,
                                name="embedded_layer")(encoder_input)
-    encoder = Encoder(6, 300, 6, 50, mask_zero=True, name='encoder')
+    encoder = Encoder(6, 300, 6, 50, config['max_num'], mask_zero=True, name='encoder')
     encoder_output = encoder([embedded_input, embedded_input, embedded_input, encoder_input, encoder_input])
 
     # decoder
     decoder_input = Input(shape=(config['max_num'],), name='decode_input')
     embedded_input2 = Embedding(config['ch_voc_size'], 300, weights=[ch_w2v_matrix], trainable=False,
                                 name="embedded_layer2")(decoder_input)
-    decoder = Decoder(6, 300, 6, 50, mask_zero=True, name='decoder')
+    decoder = Decoder(6, 300, 6, 50, config['max_num'], mask_zero=True, name='decoder')
     decoder_output = decoder([embedded_input2, encoder_output, encoder_output, decoder_input, encoder_input])
     decoder_dense = Dense(config['ch_voc_size'], activation='softmax', name='dense_layer')
     decoder_output = decoder_dense(decoder_output)
@@ -113,7 +113,7 @@ def train():
     decoder_output = label_smooth(decoder_output)
     model = Model([encoder_input, decoder_input], decoder_output)
 
-    opt = Adam(0.001, 0.9, 0.98, epsilon=1e-9)
+    opt = Adam(0.01, 0.9, 0.98, epsilon=1e-9)
     # model.compile(optimizer=opt, loss='sparse_categorical_crossentropy', metrics=['sparse_categorical_accuracy'])
     model.compile(optimizer=opt, loss=mask_loss, metrics=[mask_accuracy])
 

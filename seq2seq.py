@@ -7,14 +7,15 @@ from layers import *
 from keras.layers import Dropout, Layer
 
 class Encoder():
-    def __init__(self, layer_num, model_size, nb_head, size_per_head, mask_zero=False, drop_out=0.1, **kwargs):
+    def __init__(self, layer_num, model_size, nb_head, size_per_head, seq_len, mask_zero=False, drop_out=0.1, **kwargs):
         self.layers = layer_num
         self.model_size = model_size
         self.dropout = drop_out
         self.mask = mask_zero
         self.heads = nb_head
         self.headsize = size_per_head
-        self.pos_embedding = PositionEmbedding(self.model_size)
+        self.seq_len = seq_len
+        self.pos_embedding = PositionEmbedding(self.model_size, self.seq_len)
         self.attention = Attention(self.heads, self.headsize, self.mask)
         self.Drop_out = Dropout(self.dropout)
         self.layer_normalization = LayerNormalization()
@@ -39,29 +40,17 @@ class Encoder():
             Q_emb, K_emb, V_emb = O, O, O
         return Q_emb
 
-    # def get_config(self):
-    #     # this method is important for loading the model!
-    #     # for more information, please refer to https://github.com/keras-team/keras/issues/7000
-    #     config = {
-    #         'layer_num': self.layers,
-    #         'model_size': self.model_size,
-    #         'nb_head': self.heads,
-    #         'size_per_head': self.headsize,
-    #         'mask_zero': self.mask,
-    #         'drop_out': self.dropout
-    #     }
-    #     base_config = super(Encoder, self).get_config()
-    #     return dict(list(base_config.items()) + list(config.items()))
 
 class Decoder():
-    def __init__(self, layer_num, model_size, nb_head, size_per_head, mask_zero=False, drop_out=0.1, **kwargs):
+    def __init__(self, layer_num, model_size, nb_head, size_per_head, seq_len, mask_zero=False, drop_out=0.1, **kwargs):
         self.layers = layer_num
         self.model_size = model_size
         self.dropout = drop_out
         self.mask = mask_zero
         self.heads = nb_head
         self.headsize = size_per_head
-        self.pos_embedding = PositionEmbedding(self.model_size)
+        self.seq_len = seq_len
+        self.pos_embedding = PositionEmbedding(self.model_size, self.seq_len)
         self.self_attention = Attention(self.heads, self.headsize, self.mask, selfmask_decoder=True)
         self.attention = Attention(self.heads, self.headsize, self.mask, selfmask_decoder=False)
         self.Drop_out = Dropout(self.dropout)
@@ -91,15 +80,3 @@ class Decoder():
             O = self.layer_normalization([O, O_seq2])
             Q_emb = O
         return Q_emb
-
-    # def get_config(self):
-    #     config = {
-    #         'layer_num': self.layers,
-    #         'model_size': self.model_size,
-    #         'nb_head': self.heads,
-    #         'size_per_head': self.headsize,
-    #         'mask_zero': self.mask,
-    #         'drop_out': self.dropout
-    #     }
-    #     base_config = super(Decoder, self).get_config()
-    #     return dict(list(base_config.items()) + list(config.items()))

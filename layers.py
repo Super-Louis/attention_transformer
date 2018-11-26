@@ -13,24 +13,24 @@ from keras.layers import ReLU, Lambda
 
 class PositionEmbedding(Layer):
 
-    def __init__(self, size=None, mode='sum', **kwargs):
+    def __init__(self, size, seq_len, mode='sum', **kwargs):
         self.size = size  # 必须为偶数
+        self.seq_len = seq_len
         self.mode = mode
         super(PositionEmbedding, self).__init__(**kwargs)
 
     def call(self, inputs, **kwargs):
         # inputs(batch_size, seq_len, model_size)
-        if (self.size == None) or (self.mode == 'sum'):
+        if self.size == None:
             self.size = int(inputs.shape[-1])
-        seq_len, model_size = K.shape(inputs)[1], K.shape(inputs)[2]
-        pos = K.cast(K.expand_dims(K.arange(0, seq_len), -1), tf.float32)
-        powers = K.expand_dims(K.pow(1000.0, tf.cast(2*tf.floor(K.arange(0, self.size)/2)/self.size, tf.float32)), 0)
-        pe = pos*powers
-        # the first time_step is all zeros
-        sin = K.sin(pe[0::2])
-        cos = K.cos(pe[1::2])
-        pe = K.concatenate([sin, cos], axis=0)
-        return inputs + pe
+        pos_enc = np.array([
+            [pos / np.power(10000, 2 * (j // 2) / self.size) for j in range(self.size)]
+            if pos != 0 else np.zeros(self.size)
+            for pos in range(self.seq_len)
+        ])
+        pos_enc[1:, 0::2] = np.sin(pos_enc[1:, 0::2])  # dim 2i
+        pos_enc[1:, 1::2] = np.cos(pos_enc[1:, 1::2])  # dim 2i+1
+        return inputs + K.constant(pos_enc, dtype=tf.float32)
 
     def compute_output_shape(self, input_shape):
         if self.mode == 'sum':
@@ -44,6 +44,7 @@ class PositionEmbedding(Layer):
         config = {
             'size': self.size,
             'mode': self.mode,
+            'seq_len': self.seq_len
         }
         base_config = super(PositionEmbedding, self).get_config()
         return dict(list(base_config.items()) + list(config.items()))
@@ -279,6 +280,7 @@ class PWFF(Layer):
 
     def compute_output_shape(self, input_shape):
         return input_shape
+
 
 class LabelSmooth(Layer):
     def __init__(self, e, K, **kwargs):
