@@ -113,7 +113,7 @@ def train():
     decoder_output = label_smooth(decoder_output)
     model = Model([encoder_input, decoder_input], decoder_output)
 
-    opt = Adam(0.01, 0.9, 0.98, epsilon=1e-9)
+    opt = Adam(0.001, 0.9, 0.98, epsilon=1e-9)
     # model.compile(optimizer=opt, loss='sparse_categorical_crossentropy', metrics=['sparse_categorical_accuracy'])
     model.compile(optimizer=opt, loss=mask_loss, metrics=[mask_accuracy])
 

@@ -13,6 +13,7 @@ from keras.layers import ReLU, Lambda
 
 class PositionEmbedding(Layer):
 
+    # todo: check if it's necessary to add mask
     def __init__(self, size, seq_len, mode='sum', **kwargs):
         self.size = size  # 必须为偶数
         self.seq_len = seq_len
@@ -75,10 +76,10 @@ class Attention(Layer):
                                   initializer='glorot_uniform',
                                   trainable=True)
         # todo: check if it's necessary
-        # self.WO = self.add_weight(name='WO',
-        #                           shape=(self.nb_head * self.size_per_head, self.output_dim),
-        #                           initializer='glorot_uniform',
-        #                           trainable=True)
+        self.WO = self.add_weight(name='WO',
+                                  shape=(self.nb_head * self.size_per_head, self.output_dim),
+                                  initializer='glorot_uniform',
+                                  trainable=True)
         super(Attention, self).build(input_shape)
 
     def pad_mask(self, ini_input_q, ini_input_k):
@@ -176,7 +177,7 @@ class Attention(Layer):
         # (batch_size, seq_len_q, nb_head*head_size)
         O_seq = K.reshape(O_seq, [K.shape(O_seq)[0], K.shape(O_seq)[1], -1])
         # (batch_size, seq_len_q, output_dim)
-        # O_seq = K.dot(O_seq, self.WO)
+        O_seq = K.dot(O_seq, self.WO)
         return O_seq
 
     def compute_output_shape(self, input_shape):
@@ -209,17 +210,18 @@ class LayerNormalization(Layer):
             input_shape = input_shape[0]
         # scale and shift
         self.gamma = self.add_weight(name='gamma', shape=(input_shape[-1],),
-                                     initializer='glorot_uniform', trainable=True)
+                                     initializer='ones', trainable=True)
         self.beta = self.add_weight(name='beta', shape=(input_shape[-1],),
-                                    initializer='glorot_uniform', trainable=True)
+                                    initializer='zeros', trainable=True)
         super(LayerNormalization, self).build(input_shape)
 
     def call(self, inputs, **kwargs):
+        # todo: which ndim?
         if self.residual:
             # residual connection which adds the output of the layer and the input of the layer
             inputs = inputs[0] + inputs[1]
-        mean = K.mean(inputs, axis=-1, keepdims=True)
-        std = K.std(inputs, axis=-1, keepdims=True)
+        mean = K.mean(inputs, axis=1, keepdims=True)
+        std = K.std(inputs, axis=1, keepdims=True)
         return self.gamma * (inputs - mean) / (std + self.eps) + self.beta
 
     def compute_output_shape(self, input_shape):
