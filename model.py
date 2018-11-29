@@ -40,8 +40,8 @@ en_voc_rev = {v:k for k, v in en_voc.items()}
 
 def gen_datasets():
     encode_input = np.load('data/encode_input.npy')
-    decode_input = np.load('data/decode_input2.npy')
-    decode_output = np.load('data/decode_output2.npy')
+    decode_input = np.load('data/decode_input.npy')
+    decode_output = np.load('data/decode_output.npy')
     encode_input = pad_sequences(encode_input, maxlen=config['max_num'], truncating='post', padding='post')
     decode_input = pad_sequences(decode_input, maxlen=config['max_num'], truncating='post', padding='post')
     decode_output = pad_sequences(decode_output, maxlen=config['max_num'], truncating='post', padding='post')
@@ -49,15 +49,15 @@ def gen_datasets():
     return encode_input, decode_input, decode_output
 
 def get_word2vector():
-    ch_w2v_matrix = np.zeros((len(ch_voc), 300)) # vector size 100
-    ch_w2v = word2vec.Word2Vec.load('data/ch_word2vec2.model').wv
+    ch_w2v_matrix = np.zeros((len(ch_voc), 100)) # vector size 100
+    ch_w2v = word2vec.Word2Vec.load('data/ch_word2vec.model').wv
     for w, i in ch_voc.items():
         try:
             ch_w2v_matrix[i] = ch_w2v.get_vector(w)
         except:
             pass
-    en_w2v_matrix = np.zeros((len(en_voc), 300))  # vector size 100
-    en_w2v = word2vec.Word2Vec.load('data/en_word2vec2.model').wv
+    en_w2v_matrix = np.zeros((len(en_voc), 100))  # vector size 100
+    en_w2v = word2vec.Word2Vec.load('data/en_word2vec.model').wv
     for w, i in en_voc.items():
         try:
             en_w2v_matrix[i] = en_w2v.get_vector(w)
@@ -96,20 +96,20 @@ def train():
     encode_input, decode_input, decode_output = shuffle(encode_input, decode_input, decode_output)
 
     encoder_input = Input(shape=(config['max_num'],), name='encode_input')
-    embedded_input = Embedding(config['en_voc_size'], 300, weights=[en_w2v_matrix], trainable=False,
+    embedded_input = Embedding(config['en_voc_size'], 100, weights=[en_w2v_matrix], trainable=False,
                                name="embedded_layer")(encoder_input)
-    encoder = Encoder(6, 300, 6, 50, config['max_num'], mask_zero=True, name='encoder')
+    encoder = Encoder(6, 100, 5, 20, config['max_num'], mask_zero=True, name='encoder')
     encoder_output = encoder([embedded_input, embedded_input, embedded_input, encoder_input, encoder_input])
 
     # decoder
     decoder_input = Input(shape=(config['max_num'],), name='decode_input')
-    embedded_input2 = Embedding(config['ch_voc_size'], 300, weights=[ch_w2v_matrix], trainable=False,
+    embedded_input2 = Embedding(config['ch_voc_size'], 100, weights=[ch_w2v_matrix], trainable=False,
                                 name="embedded_layer2")(decoder_input)
-    decoder = Decoder(6, 300, 6, 50, config['max_num'], mask_zero=True, name='decoder')
+    decoder = Decoder(6, 100, 5, 20, config['max_num'], mask_zero=True, name='decoder')
     decoder_output = decoder([embedded_input2, encoder_output, encoder_output, decoder_input, encoder_input])
     decoder_dense = Dense(config['ch_voc_size'], activation='softmax', name='dense_layer')
     decoder_output = decoder_dense(decoder_output)
-    label_smooth = LabelSmooth(0.2, config['ch_voc_size'])
+    label_smooth = LabelSmooth(0.1, config['ch_voc_size'])
     decoder_output = label_smooth(decoder_output)
     model = Model([encoder_input, decoder_input], decoder_output)
 
@@ -118,12 +118,12 @@ def train():
     model.compile(optimizer=opt, loss=mask_loss, metrics=[mask_accuracy])
 
     model.summary()
-    tb = TensorBoard(log_dir='./tb_logs/1125', histogram_freq=0, write_graph=True, write_images=False,
+    tb = TensorBoard(log_dir='./tb_logs/1129', histogram_freq=0, write_graph=True, write_images=False,
                      embeddings_freq=0, embeddings_layer_names=None, embeddings_metadata=None)
     cp = ModelCheckpoint('./models/attention_seq2seq.{epoch:02d}-{val_loss:.2f}.hdf5', monitor='val_loss', verbose=0,
                          save_best_only=False, save_weights_only=False, mode='auto', period=1)
     try:
-        model.fit([encode_input, decode_input], decode_output, validation_split=0.2, batch_size=256, epochs=10, callbacks=[tb, cp])
+        model.fit([encode_input, decode_input], decode_output, validation_split=0.2, batch_size=64, epochs=10, callbacks=[tb, cp])
     except KeyboardInterrupt:
         model.save('attention_seq2seq')
     else:

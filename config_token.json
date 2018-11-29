@@ -1,10 +1,10 @@
 {
   "batch_size": 256,
   "epoch": 10,
-  "embedding_size": 100,
+  "embedding_size": 300,
   "hidden_size": 128,
   "en_voc_size": 12222,
-  "ch_voc_size": 30000,
+  "ch_voc_size": 8912,
   "max_num": 30,
   "start_word": "<start>",
   "end_word": "<end>",
