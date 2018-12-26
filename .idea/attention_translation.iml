@@ -2,7 +2,30 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.6.3 (~/.pyenv/versions/3.6.3/bin/python3.6)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="transformer" />
+    <orderEntry type="module" module-name="attention-is-all-you-need-keras" />
+    <orderEntry type="module" module-name="crf-ner" />
+    <orderEntry type="module" module-name="comments_classification" />
+    <orderEntry type="module" module-name="chewbacca" />
+    <orderEntry type="module" module-name="JianXi" />
+    <orderEntry type="module" module-name="as" />
+    <orderEntry type="module" module-name="as" />
+    <orderEntry type="module" module-name="transformer" />
+    <orderEntry type="module" module-name="daily_import" />
+    <orderEntry type="module" module-name="transformer" />
+    <orderEntry type="module" module-name="crf-ner" />
+    <orderEntry type="module" module-name="graph" />
+    <orderEntry type="module" module-name="data-system" />
+    <orderEntry type="module" module-name="CV_extract" />
+    <orderEntry type="module" module-name="keras" />
+    <orderEntry type="module" module-name="jianxun-v2-b" />
+    <orderEntry type="module" module-name="comments_classification" />
+    <orderEntry type="module" module-name="poems_generator" />
+    <orderEntry type="module" module-name="ListParser" />
+    <orderEntry type="module" module-name="Algorithm" />
+    <orderEntry type="module" module-name="ListParser" />
+    <orderEntry type="module" module-name="bert" />
   </component>
 </module>

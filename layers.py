@@ -75,7 +75,6 @@ class Attention(Layer):
                                   shape=(input_shape[2][-1], self.output_dim),
                                   initializer='glorot_uniform',
                                   trainable=True)
-        # todo: check if it's necessary
         self.WO = self.add_weight(name='WO',
                                   shape=(self.nb_head * self.size_per_head, self.output_dim),
                                   initializer='glorot_uniform',
@@ -126,7 +125,6 @@ class Attention(Layer):
 
     def dot_and_reshape(self, input, weight):
         """dot and reshape for the q,k,v
-
         :param input:
         :param weight:
         :return:
@@ -216,12 +214,12 @@ class LayerNormalization(Layer):
         super(LayerNormalization, self).build(input_shape)
 
     def call(self, inputs, **kwargs):
-        # todo: which ndim?
+        # todo: choose which dim to perform normalization?
         if self.residual:
             # residual connection which adds the output of the layer and the input of the layer
             inputs = inputs[0] + inputs[1]
-        mean = K.mean(inputs, axis=1, keepdims=True)
-        std = K.std(inputs, axis=1, keepdims=True)
+        mean = K.mean(inputs, axis=-1, keepdims=True)
+        std = K.std(inputs, axis=-1, keepdims=True)
         return self.gamma * (inputs - mean) / (std + self.eps) + self.beta
 
     def compute_output_shape(self, input_shape):

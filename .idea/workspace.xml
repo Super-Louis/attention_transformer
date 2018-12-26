@@ -1,15 +1,398 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31aa8339-e649-4c3f-b1be-3f102b2e6f59" name="Default" comment="" />
+    <list default="true" id="31aa8339-e649-4c3f-b1be-3f102b2e6f59" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Algorithm/algo/is_child.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Algorithm/algo/replace_str.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../comments_classification/dl/keras2tf.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../comments_classification/dl/predict.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../comments_classification/dl/test_server.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../daily_import/sparse_resume.py" />
+      <change beforePath="$PROJECT_DIR$/../Algorithm/.idea/Algorithm.iml" afterPath="$PROJECT_DIR$/../Algorithm/.idea/Algorithm.iml" />
+      <change beforePath="$PROJECT_DIR$/../Algorithm/algo/dp.py" afterPath="$PROJECT_DIR$/../Algorithm/algo/dp.py" />
+      <change beforePath="$PROJECT_DIR$/../Algorithm/graph/bfs-search.py" afterPath="$PROJECT_DIR$/../Algorithm/graph/bfs-search.py" />
+      <change beforePath="$PROJECT_DIR$/../Algorithm/sort/search.py" afterPath="$PROJECT_DIR$/../Algorithm/sort/search.py" />
+      <change beforePath="$PROJECT_DIR$/../CV_extract/.idea/CV_extract.iml" afterPath="$PROJECT_DIR$/../CV_extract/.idea/CV_extract.iml" />
+      <change beforePath="$PROJECT_DIR$/../CV_extract/.idea/misc.xml" afterPath="$PROJECT_DIR$/../CV_extract/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/../CV_extract/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../CV_extract/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../CV_extract/MODEL_3/job_experience_extractor/main.py" afterPath="$PROJECT_DIR$/../CV_extract/MODEL_3/job_experience_extractor/main.py" />
+      <change beforePath="$PROJECT_DIR$/../CV_extract/MODEL_3/profile_extractor/name/enter.py" afterPath="$PROJECT_DIR$/../CV_extract/MODEL_3/profile_extractor/name/enter.py" />
+      <change beforePath="$PROJECT_DIR$/../JianXi/bachrank.py" afterPath="$PROJECT_DIR$/../JianXi/bachrank.py" />
+      <change beforePath="$PROJECT_DIR$/../JianXi/core/classify/__init__.py" afterPath="$PROJECT_DIR$/../JianXi/core/classify/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/../JianXi/models/segment/segment_predict.py" afterPath="$PROJECT_DIR$/../JianXi/models/segment/segment_predict.py" />
+      <change beforePath="$PROJECT_DIR$/../JianXi/models/segment/segmenter/run_cnn.py" afterPath="$PROJECT_DIR$/../JianXi/models/segment/segmenter/run_cnn.py" />
+      <change beforePath="$PROJECT_DIR$/../JianXi/models/segment/segmenter/run_rnn.py" afterPath="$PROJECT_DIR$/../JianXi/models/segment/segmenter/run_rnn.py" />
+      <change beforePath="$PROJECT_DIR$/../attention-is-all-you-need-keras/transformer.py" afterPath="$PROJECT_DIR$/../attention-is-all-you-need-keras/transformer.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/attention_translation.iml" afterPath="$PROJECT_DIR$/.idea/attention_translation.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/layers.py" afterPath="$PROJECT_DIR$/layers.py" />
+      <change beforePath="$PROJECT_DIR$/model.py" afterPath="$PROJECT_DIR$/model.py" />
+      <change beforePath="$PROJECT_DIR$/seq2seq.py" afterPath="$PROJECT_DIR$/seq2seq.py" />
+      <change beforePath="$PROJECT_DIR$/../bert/README.md" afterPath="$PROJECT_DIR$/../bert/README.md" />
+      <change beforePath="$PROJECT_DIR$/../bert/create_pretraining_data.py" afterPath="$PROJECT_DIR$/../bert/create_pretraining_data.py" />
+      <change beforePath="$PROJECT_DIR$/../bert/modeling.py" afterPath="$PROJECT_DIR$/../bert/modeling.py" />
+      <change beforePath="$PROJECT_DIR$/../bert/tokenization.py" afterPath="$PROJECT_DIR$/../bert/tokenization.py" />
+      <change beforePath="$PROJECT_DIR$/../comments_classification/.idea/comments_classification.iml" afterPath="$PROJECT_DIR$/../comments_classification/.idea/comments_classification.iml" />
+      <change beforePath="$PROJECT_DIR$/../comments_classification/dl/lstm_keras2" afterPath="$PROJECT_DIR$/../comments_classification/dl/lstm_keras2" />
+      <change beforePath="$PROJECT_DIR$/../comments_classification/dl/model.py" afterPath="$PROJECT_DIR$/../comments_classification/dl/model.py" />
+      <change beforePath="$PROJECT_DIR$/../daily_import/.idea/daily_import.iml" afterPath="$PROJECT_DIR$/../daily_import/.idea/daily_import.iml" />
+      <change beforePath="$PROJECT_DIR$/../graph/.idea/graph.iml" afterPath="$PROJECT_DIR$/../graph/.idea/graph.iml" />
+      <change beforePath="$PROJECT_DIR$/../graph/node/predict_category.py" afterPath="$PROJECT_DIR$/../graph/node/predict_category.py" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/examples/lstm_seq2seq.py" afterPath="$PROJECT_DIR$/../keras-examples/examples/lstm_seq2seq.py" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/examples/lstm_seq2seq_restore.py" afterPath="$PROJECT_DIR$/../keras-examples/examples/lstm_seq2seq_restore.py" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/activations.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/densenet.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/imagenet_utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/inception_resnet_v2.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/inception_v3.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/mobilenet.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/mobilenet_v2.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/mobilenetv2.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/nasnet.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/resnet50.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/vgg16.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/vgg19.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/applications/xception.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/backend/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/backend/cntk_backend.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/backend/common.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/backend/tensorflow_backend.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/backend/theano_backend.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/callbacks.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/constraints.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/datasets/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/datasets/boston_housing.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/datasets/cifar.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/datasets/cifar10.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/datasets/cifar100.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/datasets/fashion_mnist.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/datasets/imdb.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/datasets/mnist.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/datasets/reuters.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/engine/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/engine/base_layer.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/engine/input_layer.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/engine/network.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/engine/saving.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/engine/sequential.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/engine/topology.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/engine/training.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/engine/training_arrays.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/engine/training_generator.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/engine/training_utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/initializers.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/advanced_activations.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/convolutional.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/convolutional_recurrent.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/core.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/cudnn_recurrent.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/embeddings.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/local.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/merge.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/noise.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/normalization.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/pooling.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/recurrent.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/layers/wrappers.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/legacy/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/legacy/interfaces.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/legacy/layers.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/losses.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/metrics.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/models.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/objectives.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/optimizers.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/preprocessing/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/preprocessing/image.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/preprocessing/sequence.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/preprocessing/text.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/regularizers.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/utils/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/utils/conv_utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/utils/data_utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/utils/generic_utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/utils/io_utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/utils/layer_utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/utils/multi_gpu_utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/utils/np_utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/utils/test_utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/utils/vis_utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/wrappers/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras-examples/keras/wrappers/scikit_learn.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../keras_crf_ner/.idea/crf-ner.iml" afterPath="$PROJECT_DIR$/../keras_crf_ner/.idea/crf-ner.iml" />
+      <change beforePath="$PROJECT_DIR$/../keras_crf_ner/data/data-processing.ipynb" afterPath="$PROJECT_DIR$/../keras_crf_ner/data/data-processing.ipynb" />
+      <change beforePath="$PROJECT_DIR$/../keras_crf_ner/model.py" afterPath="$PROJECT_DIR$/../keras_crf_ner/model.py" />
+      <change beforePath="$PROJECT_DIR$/../poems_generator/.idea/poems_generator.iml" afterPath="$PROJECT_DIR$/../poems_generator/.idea/poems_generator.iml" />
+      <change beforePath="$PROJECT_DIR$/../poems_generator/generate_poems.py" afterPath="$PROJECT_DIR$/../poems_generator/generate_poems.py" />
+      <change beforePath="$PROJECT_DIR$/../poems_generator/model/model.py" afterPath="$PROJECT_DIR$/../poems_generator/model/model.py" />
+      <change beforePath="$PROJECT_DIR$/../poems_generator/model/poem_model.ckpt.data-00000-of-00001" afterPath="$PROJECT_DIR$/../poems_generator/model/poem_model.ckpt.data-00000-of-00001" />
+      <change beforePath="$PROJECT_DIR$/../poems_generator/model/poem_model.ckpt.index" afterPath="$PROJECT_DIR$/../poems_generator/model/poem_model.ckpt.index" />
+      <change beforePath="$PROJECT_DIR$/../poems_generator/model/poem_model.ckpt.meta" afterPath="$PROJECT_DIR$/../poems_generator/model/poem_model.ckpt.meta" />
+      <change beforePath="$PROJECT_DIR$/../poems_generator/train.py" afterPath="$PROJECT_DIR$/../poems_generator/train.py" />
+      <change beforePath="$PROJECT_DIR$/../transformer/.idea/transformer.iml" afterPath="$PROJECT_DIR$/../transformer/.idea/transformer.iml" />
+      <change beforePath="$PROJECT_DIR$/../transformer/predict.py" afterPath="$PROJECT_DIR$/../transformer/predict.py" />
+      <change beforePath="$PROJECT_DIR$/../transformer/train.py" afterPath="$PROJECT_DIR$/../transformer/train.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="attention_transformer" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
+      <file leaf-file-name="modeling.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bert/modeling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="887" column="35" lean-forward="true" selection-start-line="887" selection-start-column="35" selection-end-line="887" selection-end-column="35" />
+              <folding>
+                <element signature="e#665#703#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="math_ops.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58304">
+              <caret line="1851" column="41" lean-forward="false" selection-start-line="1851" selection-start-column="41" selection-end-line="1851" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resume_score.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../as-test/server/core/resume_score.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3104">
+              <caret line="97" column="13" lean-forward="false" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constant.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../as-test/server/data/constant.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1024">
+              <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="216" column="57" lean-forward="false" selection-start-line="216" selection-start-column="57" selection-end-line="216" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seq2seq.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/seq2seq.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2560">
+              <caret line="81" column="12" lean-forward="false" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/layers/core.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3392">
+              <caret line="118" column="9" lean-forward="false" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/layers/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1024">
+              <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nn_impl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25952">
+              <caret line="832" column="22" lean-forward="false" selection-start-line="832" selection-start-column="22" selection-end-line="832" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>unk</find>
+      <find>pre</find>
+      <find>predi</find>
+      <find>self.outputs</find>
+      <find>secondaryPreferred</find>
+      <find>228</find>
+      <find>List</find>
+      <find>concat</find>
+      <find>bidirectional_dynamic_rnn</find>
+      <find>register_h</find>
+      <find>10</find>
+      <find>labe</find>
+      <find>Call us</find>
+      <find>category</find>
+      <find>label</find>
+      <find>argmax</find>
+      <find>key</find>
+      <find>level</find>
+      <find>extract_features</find>
+      <find>do_predict</find>
+      <find>token_type_ids</find>
+      <find>token_type</find>
+      <find>layers</find>
+      <find>contrib</find>
+      <find>layer_</find>
+      <find>layer_norm</find>
+      <find>layer_n</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/../as-test</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/../chewbacca</dir>
+      <dir>$PROJECT_DIR$/../bert</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/data/data_processor.py" />
+        <option value="$PROJECT_DIR$/../keras_crf_ner/model.py" />
+        <option value="$PROJECT_DIR$/../JianXi/models/segment/segment_predict.py" />
+        <option value="$PROJECT_DIR$/../JianXi/models/segment/segmenter/run_cnn.py" />
+        <option value="$PROJECT_DIR$/../JianXi/models/segment/segmenter/run_rnn.py" />
+        <option value="$PROJECT_DIR$/../comments_classification/dl/model.py" />
+        <option value="$PROJECT_DIR$/../comments_classification/dl/predict.py" />
+        <option value="$PROJECT_DIR$/model.py" />
+        <option value="$PROJECT_DIR$/../chewbacca/server/scripts/check_list.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_66.py" />
+        <option value="$PROJECT_DIR$/../JianXi/core/model/resume.py" />
+        <option value="$PROJECT_DIR$/../JianXi/bachrank.py" />
+        <option value="$PROJECT_DIR$/../JianXi/core/classify/__init__.py" />
+        <option value="$PROJECT_DIR$/../JianXi/models/profile_name/model.py" />
+        <option value="$PROJECT_DIR$/../transformer/train.py" />
+        <option value="$PROJECT_DIR$/../as-test/server/core/mongo.py" />
+        <option value="$PROJECT_DIR$/../as-test/server/scripts/index_import.py" />
+        <option value="$PROJECT_DIR$/../as-test/server/scripts/index_import_all.py" />
+        <option value="$PROJECT_DIR$/../as-test/server/core/resume_processor.py" />
+        <option value="$PROJECT_DIR$/../as-test/Dockerfile" />
+        <option value="$PROJECT_DIR$/../comments_classification/dl/test_server.py" />
+        <option value="$PROJECT_DIR$/../comments_classification/dl/keras2tf.py" />
+        <option value="$PROJECT_DIR$/../as-test/server/core/es_schema_test.py" />
+        <option value="$PROJECT_DIR$/../as-test/server/core/es_schema.py" />
+        <option value="$PROJECT_DIR$/../as-test/server/modules/resume_search/model/search.py" />
+        <option value="$PROJECT_DIR$/../as-test/server/modules/resume_search/__init__.py" />
+        <option value="$PROJECT_DIR$/../as-test/server/api.py" />
+        <option value="$PROJECT_DIR$/../as-test/server/modules/resume_search/search_handler.py" />
+        <option value="$PROJECT_DIR$/../as-test/server/settings/config.py" />
+        <option value="$PROJECT_DIR$/../as-test/etc/web_config.conf" />
+        <option value="$PROJECT_DIR$/../as-test/etc/online_public_config.conf" />
+        <option value="$PROJECT_DIR$/../as-test/etc/online_inner_config.conf" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_68.py" />
+        <option value="$PROJECT_DIR$/../Algorithm/algo/replace_str.py" />
+        <option value="$PROJECT_DIR$/../bert/tokenization.py" />
+        <option value="$PROJECT_DIR$/../bert/README.md" />
+        <option value="$PROJECT_DIR$/../bert/create_pretraining_data.py" />
+        <option value="$PROJECT_DIR$/../bert/modeling.py" />
+        <option value="$PROJECT_DIR$/layers.py" />
+        <option value="$PROJECT_DIR$/seq2seq.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-15" />
+    <option name="width" value="1916" />
+    <option name="height" value="1086" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="attention_transformer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="attention_transformer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="attention_transformer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bert" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bert" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Python&#10;Bash" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -18,11 +401,135 @@
       </console-settings>
     </option>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.scratch_68">
+    <configuration name="es_schema_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../as-test/server/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="as" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../as-test/server/core/es_schema_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="keras2tf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../comments_classification/dl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="comments_classification" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../comments_classification/dl/keras2tf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="lstm_seq2seq_restore" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../keras-examples/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="keras" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../keras-examples/examples/lstm_seq2seq_restore.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="scratch_68" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ListParser" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_68.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../comments_classification/dl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="comments_classification" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../comments_classification/dl/test_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.es_schema_test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.lstm_seq2seq_restore" />
+      <item index="2" class="java.lang.String" itemvalue="Python.keras2tf" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test_server" />
+      <item index="4" class="java.lang.String" itemvalue="Python.scratch_68" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.scratch_68" />
+        <item index="1" class="java.lang.String" itemvalue="Python.es_schema_test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_server" />
+        <item index="3" class="java.lang.String" itemvalue="Python.keras2tf" />
+        <item index="4" class="java.lang.String" itemvalue="Python.lstm_seq2seq_restore" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="31aa8339-e649-4c3f-b1be-3f102b2e6f59" name="Default" comment="" />
       <created>1542806139593</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -30,8 +537,452 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-15" width="1922" height="1083" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24150743" sideWeight="0.49638057" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988626" sideWeight="0.4957537" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28078556" sideWeight="0.49638057" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5418821" sideWeight="0.5021231" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6690796" sideWeight="0.4957537" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.89245087" sideWeight="0.49787685" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49638057" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988626" sideWeight="0.49787685" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28078556" sideWeight="0.50361943" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33092037" sideWeight="0.49787685" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../Algorithm/algo/replace_str.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../chewbacca/server/modules/search/rencaiyun_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../chewbacca/server/modules/search/model/rencaiyun_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="195" column="0" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../as-test/server/modules/resume_search/model/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="696" column="33" lean-forward="true" selection-start-line="696" selection-start-column="33" selection-end-line="696" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bert/run_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24992">
+          <caret line="791" column="0" lean-forward="false" selection-start-line="791" selection-start-column="0" selection-end-line="791" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bert/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="19328">
+            <caret line="604" column="0" lean-forward="false" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bert/multilingual.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="7008">
+            <caret line="219" column="11" lean-forward="false" selection-start-line="219" selection-start-column="11" selection-end-line="219" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/18189896/unicodedata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3200">
+          <caret line="100" column="4" lean-forward="false" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/18189896/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26496">
+          <caret line="828" column="17" lean-forward="false" selection-start-line="828" selection-start-column="17" selection-end-line="828" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/builtins.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bert/create_pretraining_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11680">
+          <caret line="372" column="11" lean-forward="false" selection-start-line="372" selection-start-column="11" selection-end-line="372" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bert/extract_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bert/tokenization_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="86" column="30" lean-forward="false" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bert/modeling_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bert/optimization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bert/optimization_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bert/tokenization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="154" column="14" lean-forward="false" selection-start-line="154" selection-start-column="14" selection-end-line="154" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../as-test/server/core/es_schema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="258" column="27" lean-forward="false" selection-start-line="258" selection-start-column="27" selection-end-line="258" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-887">
+          <caret line="4285" column="0" lean-forward="false" selection-start-line="4285" selection-start-column="0" selection-end-line="4285" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/ops/variable_scope.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1866">
+          <caret line="1436" column="19" lean-forward="true" selection-start-line="1436" selection-start-column="19" selection-end-line="1436" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1014">
+          <caret line="559" column="43" lean-forward="false" selection-start-line="559" selection-start-column="43" selection-end-line="559" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../keras-examples/keras-clone/engine/network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="318" column="8" lean-forward="false" selection-start-line="318" selection-start-column="8" selection-end-line="318" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../keras-examples/keras-clone/engine/sequential.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="95" column="8" lean-forward="false" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/layers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/types.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1152">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/util/lazy_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../as-test/server/core/resume_processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="213" column="12" lean-forward="false" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../as-test/server/core/resume_analyze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3552">
+          <caret line="114" column="15" lean-forward="false" selection-start-line="114" selection-start-column="15" selection-end-line="114" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="599" column="2" lean-forward="false" selection-start-line="599" selection-start-column="2" selection-end-line="599" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../attention-is-all-you-need-keras/transformer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2048">
+          <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/layers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7872">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/contrib/eager/python/network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30723">
+          <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/contrib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="54" column="34" lean-forward="false" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/contrib/layers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="117" column="40" lean-forward="false" selection-start-line="117" selection-start-column="40" selection-end-line="117" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/ops/nn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/contrib/layers/python/layers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/contrib/tensor_forest/hybrid/python/models/nn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/keras/layers/normalization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5386">
+          <caret line="165" column="21" lean-forward="false" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/layers/normalization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/contrib/layers/python/layers/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72832">
+          <caret line="2309" column="28" lean-forward="false" selection-start-line="2309" selection-start-column="28" selection-end-line="2309" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/ops/gen_math_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="6336" column="4" lean-forward="false" selection-start-line="6336" selection-start-column="4" selection-end-line="6336" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25952">
+          <caret line="832" column="22" lean-forward="false" selection-start-line="832" selection-start-column="22" selection-end-line="832" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/layers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1024">
+          <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/layers/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3392">
+          <caret line="118" column="9" lean-forward="false" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../as-test/server/data/constant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1024">
+          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../as-test/server/core/resume_score.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3104">
+          <caret line="97" column="13" lean-forward="false" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.6.3/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58304">
+          <caret line="1851" column="41" lean-forward="false" selection-start-line="1851" selection-start-column="41" selection-end-line="1851" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bert/modeling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="887" column="35" lean-forward="true" selection-start-line="887" selection-start-column="35" selection-end-line="887" selection-end-column="35" />
+          <folding>
+            <element signature="e#665#703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="216" column="57" lean-forward="false" selection-start-line="216" selection-start-column="57" selection-end-line="216" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seq2seq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2560">
+          <caret line="81" column="12" lean-forward="false" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

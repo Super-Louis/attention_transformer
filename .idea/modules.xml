@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Algorithm/.idea/Algorithm.iml" filepath="$PROJECT_DIR$/../Algorithm/.idea/Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CV_extract/.idea/CV_extract.iml" filepath="$PROJECT_DIR$/../CV_extract/.idea/CV_extract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JianXi/.idea/JianXi.iml" filepath="$PROJECT_DIR$/../JianXi/.idea/JianXi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ListParser/.idea/ListParser.iml" filepath="$PROJECT_DIR$/../ListParser/.idea/ListParser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../as-test/.idea/as.iml" filepath="$PROJECT_DIR$/../as-test/.idea/as.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../attention-is-all-you-need-keras/.idea/attention-is-all-you-need-keras.iml" filepath="$PROJECT_DIR$/../attention-is-all-you-need-keras/.idea/attention-is-all-you-need-keras.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/attention_translation.iml" filepath="$PROJECT_DIR$/.idea/attention_translation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bert/.idea/bert.iml" filepath="$PROJECT_DIR$/../bert/.idea/bert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../chewbacca/.idea/chewbacca.iml" filepath="$PROJECT_DIR$/../chewbacca/.idea/chewbacca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../comments_classification/.idea/comments_classification.iml" filepath="$PROJECT_DIR$/../comments_classification/.idea/comments_classification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../keras_crf_ner/.idea/crf-ner.iml" filepath="$PROJECT_DIR$/../keras_crf_ner/.idea/crf-ner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../daily_import/.idea/daily_import.iml" filepath="$PROJECT_DIR$/../daily_import/.idea/daily_import.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../data-system/.idea/data-system.iml" filepath="$PROJECT_DIR$/../data-system/.idea/data-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../graph/.idea/graph.iml" filepath="$PROJECT_DIR$/../graph/.idea/graph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jianxun-v2-b/.idea/jianxun-v2-b.iml" filepath="$PROJECT_DIR$/../jianxun-v2-b/.idea/jianxun-v2-b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../keras-examples/.idea/keras.iml" filepath="$PROJECT_DIR$/../keras-examples/.idea/keras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../poems_generator/.idea/poems_generator.iml" filepath="$PROJECT_DIR$/../poems_generator/.idea/poems_generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../transformer/.idea/transformer.iml" filepath="$PROJECT_DIR$/../transformer/.idea/transformer.iml" />
     </modules>
   </component>
 </project>

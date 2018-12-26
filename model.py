@@ -92,6 +92,7 @@ def mask_accuracy(y_true, y_pred):
 
 
 def train():
+
     encode_input, decode_input, decode_output = gen_datasets()
     encode_input, decode_input, decode_output = shuffle(encode_input, decode_input, decode_output)
 
@@ -118,19 +119,20 @@ def train():
     model.compile(optimizer=opt, loss=mask_loss, metrics=[mask_accuracy])
 
     model.summary()
-    tb = TensorBoard(log_dir='./tb_logs/1129', histogram_freq=0, write_graph=True, write_images=False,
+    tb = TensorBoard(log_dir='./tb_logs/1130', histogram_freq=0, write_graph=True, write_images=False,
                      embeddings_freq=0, embeddings_layer_names=None, embeddings_metadata=None)
     cp = ModelCheckpoint('./models/attention_seq2seq.{epoch:02d}-{val_loss:.2f}.hdf5', monitor='val_loss', verbose=0,
                          save_best_only=False, save_weights_only=False, mode='auto', period=1)
     try:
-        model.fit([encode_input, decode_input], decode_output, validation_split=0.2, batch_size=64, epochs=10, callbacks=[tb, cp])
+        model.fit([encode_input, decode_input], decode_output, validation_split=0.2, batch_size=256, epochs=10, callbacks=[tb, cp])
     except KeyboardInterrupt:
         model.save('attention_seq2seq')
     else:
         model.save('attention_seq2seq')
 
 def predict(inputs):
-    model = load_model('attention_seq2seq', {
+    # todo: check if it's necessary to pad/cut the sentence to the fixed length???
+    model = load_model('attention_seq2seq_0.56', {
         'mask_loss': mask_loss,
         'mask_accuracy': mask_accuracy,
         'PositionEmbedding': PositionEmbedding,
@@ -153,7 +155,6 @@ def predict(inputs):
     for i in range(config['max_num']-1):
         print(encoder_inputs, decoder_inputs)
         decoder_output = model.predict([encoder_inputs, decoder_inputs])
-        print(decoder_output[0, i, 3])
         sampled_index = np.argmax(decoder_output[0, i, :])
         print(sampled_index)
         decoder_inputs[0, i+1] = sampled_index
@@ -164,5 +165,5 @@ def predict(inputs):
     return outputs
 
 if __name__ == '__main__':
-    # print(predict("what is your first name?"))
+    # print(predict("A couple who is willing to go along with an open adoption."))
     train()

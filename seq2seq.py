@@ -16,10 +16,7 @@ class Encoder():
         self.headsize = size_per_head
         self.seq_len = seq_len
         self.pos_embedding = PositionEmbedding(self.model_size, self.seq_len)
-        self.attention = Attention(self.heads, self.headsize, self.mask)
         self.Drop_out = Dropout(self.dropout)
-        self.layer_normalization = LayerNormalization()
-        self.pwff = PWFF()
 
     def __call__(self, inputs, **kwargs):
         if self.mask:
@@ -31,12 +28,18 @@ class Encoder():
         Q_emb = self.pos_embedding(Q_emb)
         Q_emb = self.Drop_out(Q_emb)
         for _ in range(self.layers):
-            O_seq = self.attention([Q_emb, K_emb, V_emb, Q_ini, K_ini])
+
+            attention = Attention(self.heads, self.headsize, self.mask)
+            layer_normalization1 = LayerNormalization()
+            layer_normalization2 = LayerNormalization()
+            pwff = PWFF()
+
+            O_seq = attention([Q_emb, K_emb, V_emb, Q_ini, K_ini])
             O_seq = self.Drop_out(O_seq)
-            O_seq = self.layer_normalization([O_seq, Q_emb])
-            O = self.pwff(O_seq)
+            O_seq = layer_normalization1([O_seq, Q_emb])
+            O = pwff(O_seq)
             O = self.Drop_out(O)
-            O = self.layer_normalization([O, O_seq])
+            O = layer_normalization2([O, O_seq])
             Q_emb, K_emb, V_emb = O, O, O
         return Q_emb
 
@@ -51,11 +54,7 @@ class Decoder():
         self.headsize = size_per_head
         self.seq_len = seq_len
         self.pos_embedding = PositionEmbedding(self.model_size, self.seq_len)
-        self.self_attention = Attention(self.heads, self.headsize, self.mask, selfmask_decoder=True)
-        self.attention = Attention(self.heads, self.headsize, self.mask, selfmask_decoder=False)
         self.Drop_out = Dropout(self.dropout)
-        self.layer_normalization = LayerNormalization()
-        self.pwff = PWFF()
 
     def __call__(self, inputs, **kwargs):
         if self.mask:
@@ -69,14 +68,22 @@ class Decoder():
         Q_emb = self.pos_embedding(Q_emb)
         Q_emb = self.Drop_out(Q_emb)
         for _ in range(self.layers):
-            O_seq = self.self_attention([Q_emb, Q_emb, Q_emb, Q_ini, Q_ini]) # self attention
+
+            self_attention = Attention(self.heads, self.headsize, self.mask, selfmask_decoder=True)
+            attention = Attention(self.heads, self.headsize, self.mask, selfmask_decoder=False)
+            layer_normalization1 = LayerNormalization()
+            layer_normalization2 = LayerNormalization()
+            layer_normalization3 = LayerNormalization()
+            pwff = PWFF()
+
+            O_seq = self_attention([Q_emb, Q_emb, Q_emb, Q_ini, Q_ini]) # self attention
             O_seq = self.Drop_out(O_seq)
-            O_seq = self.layer_normalization([O_seq, Q_emb])
-            O_seq2 = self.attention([O_seq, K_emb, V_emb, Q_ini, K_ini]) # encoder_decoder attention
+            O_seq = layer_normalization1([O_seq, Q_emb])
+            O_seq2 = attention([O_seq, K_emb, V_emb, Q_ini, K_ini]) # encoder_decoder attention
             O_seq2 = self.Drop_out(O_seq2)
-            O_seq2 = self.layer_normalization([O_seq2, O_seq])
-            O = self.pwff(O_seq2)
+            O_seq2 = layer_normalization2([O_seq2, O_seq])
+            O = pwff(O_seq2)
             O = self.Drop_out(O)
-            O = self.layer_normalization([O, O_seq2])
+            O = layer_normalization3([O, O_seq2])
             Q_emb = O
         return Q_emb
