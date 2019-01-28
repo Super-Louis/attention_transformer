@@ -12,13 +12,19 @@
     <mapping directory="$PROJECT_DIR$/../bert" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../chewbacca" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../comments_classification" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../couplet-generator" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../daily_import" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../data-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../graph" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../jianxun-v2-b" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../keras-examples" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../keras_crf_ner" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../key2offer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../list_parser_dl" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../poems_generator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../seq2seq-couplet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../super_spider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../tensorflow_study" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../transformer" vcs="Git" />
   </component>
 </project>

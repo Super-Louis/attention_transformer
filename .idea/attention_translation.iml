@@ -27,5 +27,14 @@
     <orderEntry type="module" module-name="Algorithm" />
     <orderEntry type="module" module-name="ListParser" />
     <orderEntry type="module" module-name="bert" />
+    <orderEntry type="module" module-name="tensorflow_study" />
+    <orderEntry type="module" module-name="list_parser_dl" />
+    <orderEntry type="module" module-name="couplet-generator" />
+    <orderEntry type="module" module-name="super_spider" />
+    <orderEntry type="module" module-name="couplet-generator" />
+    <orderEntry type="module" module-name="seq2seq-couplet" />
+    <orderEntry type="module" module-name="key2offer" />
+    <orderEntry type="module" module-name="captcha-rec-copy" />
+    <orderEntry type="module" module-name="job_classification" />
   </component>
 </module>

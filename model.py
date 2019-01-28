@@ -99,14 +99,14 @@ def train():
     encoder_input = Input(shape=(config['max_num'],), name='encode_input')
     embedded_input = Embedding(config['en_voc_size'], 100, weights=[en_w2v_matrix], trainable=False,
                                name="embedded_layer")(encoder_input)
-    encoder = Encoder(6, 100, 5, 20, config['max_num'], mask_zero=True, name='encoder')
+    encoder = Encoder(3, 100, 5, 20, config['max_num'], mask_zero=True, name='encoder')
     encoder_output = encoder([embedded_input, embedded_input, embedded_input, encoder_input, encoder_input])
 
     # decoder
     decoder_input = Input(shape=(config['max_num'],), name='decode_input')
     embedded_input2 = Embedding(config['ch_voc_size'], 100, weights=[ch_w2v_matrix], trainable=False,
                                 name="embedded_layer2")(decoder_input)
-    decoder = Decoder(6, 100, 5, 20, config['max_num'], mask_zero=True, name='decoder')
+    decoder = Decoder(3, 100, 5, 20, config['max_num'], mask_zero=True, name='decoder')
     decoder_output = decoder([embedded_input2, encoder_output, encoder_output, decoder_input, encoder_input])
     decoder_dense = Dense(config['ch_voc_size'], activation='softmax', name='dense_layer')
     decoder_output = decoder_dense(decoder_output)
@@ -119,19 +119,18 @@ def train():
     model.compile(optimizer=opt, loss=mask_loss, metrics=[mask_accuracy])
 
     model.summary()
-    tb = TensorBoard(log_dir='./tb_logs/1130', histogram_freq=0, write_graph=True, write_images=False,
+    tb = TensorBoard(log_dir='./tb_logs/0125', histogram_freq=0, write_graph=True, write_images=False,
                      embeddings_freq=0, embeddings_layer_names=None, embeddings_metadata=None)
     cp = ModelCheckpoint('./models/attention_seq2seq.{epoch:02d}-{val_loss:.2f}.hdf5', monitor='val_loss', verbose=0,
                          save_best_only=False, save_weights_only=False, mode='auto', period=1)
     try:
-        model.fit([encode_input, decode_input], decode_output, validation_split=0.2, batch_size=256, epochs=10, callbacks=[tb, cp])
+        model.fit([encode_input, decode_input], decode_output, validation_split=0.2, batch_size=128, epochs=10, callbacks=[tb, cp])
     except KeyboardInterrupt:
         model.save('attention_seq2seq')
     else:
         model.save('attention_seq2seq')
 
 def predict(inputs):
-    # todo: check if it's necessary to pad/cut the sentence to the fixed length???
     model = load_model('attention_seq2seq_0.56', {
         'mask_loss': mask_loss,
         'mask_accuracy': mask_accuracy,
@@ -145,13 +144,9 @@ def predict(inputs):
     words = nltk.word_tokenize(seq, )
     seqs = [en_voc.get(w, en_voc["<unk>"]) for w in words]
     encoder_inputs = pad_sequences([seqs], maxlen=config['max_num'], truncating='post', padding='post')
-    # encoder_inputs = [[30, 16, 34, 248, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]
     decoder_inputs = [ch_voc['<start>']]
     decoder_inputs = pad_sequences([decoder_inputs], maxlen=config['max_num'], truncating='post', padding='post')
-    # decoder_inputs = [[2, 8, 355, 43, 21, 229, 452, 14, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]
     outputs = ''
-    # outputs = model.predict([encoder_inputs, decoder_inputs])
-    # outputs = np.argmax(outputs, axis=-1)
     for i in range(config['max_num']-1):
         print(encoder_inputs, decoder_inputs)
         decoder_output = model.predict([encoder_inputs, decoder_inputs])

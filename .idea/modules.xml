@@ -10,15 +10,23 @@
       <module fileurl="file://$PROJECT_DIR$/../attention-is-all-you-need-keras/.idea/attention-is-all-you-need-keras.iml" filepath="$PROJECT_DIR$/../attention-is-all-you-need-keras/.idea/attention-is-all-you-need-keras.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/attention_translation.iml" filepath="$PROJECT_DIR$/.idea/attention_translation.iml" />
       <module fileurl="file://$PROJECT_DIR$/../bert/.idea/bert.iml" filepath="$PROJECT_DIR$/../bert/.idea/bert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../captcha-rec-copy/.idea/captcha-rec-copy.iml" filepath="$PROJECT_DIR$/../captcha-rec-copy/.idea/captcha-rec-copy.iml" />
       <module fileurl="file://$PROJECT_DIR$/../chewbacca/.idea/chewbacca.iml" filepath="$PROJECT_DIR$/../chewbacca/.idea/chewbacca.iml" />
       <module fileurl="file://$PROJECT_DIR$/../comments_classification/.idea/comments_classification.iml" filepath="$PROJECT_DIR$/../comments_classification/.idea/comments_classification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../couplet-generator/.idea/couplet-generator.iml" filepath="$PROJECT_DIR$/../couplet-generator/.idea/couplet-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/../keras_crf_ner/.idea/crf-ner.iml" filepath="$PROJECT_DIR$/../keras_crf_ner/.idea/crf-ner.iml" />
       <module fileurl="file://$PROJECT_DIR$/../daily_import/.idea/daily_import.iml" filepath="$PROJECT_DIR$/../daily_import/.idea/daily_import.iml" />
       <module fileurl="file://$PROJECT_DIR$/../data-system/.idea/data-system.iml" filepath="$PROJECT_DIR$/../data-system/.idea/data-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/../graph/.idea/graph.iml" filepath="$PROJECT_DIR$/../graph/.idea/graph.iml" />
       <module fileurl="file://$PROJECT_DIR$/../jianxun-v2-b/.idea/jianxun-v2-b.iml" filepath="$PROJECT_DIR$/../jianxun-v2-b/.idea/jianxun-v2-b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../job_classification/.idea/job_classification.iml" filepath="$PROJECT_DIR$/../job_classification/.idea/job_classification.iml" />
       <module fileurl="file://$PROJECT_DIR$/../keras-examples/.idea/keras.iml" filepath="$PROJECT_DIR$/../keras-examples/.idea/keras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../key2offer/.idea/key2offer.iml" filepath="$PROJECT_DIR$/../key2offer/.idea/key2offer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../list_parser_dl/.idea/list_parser_dl.iml" filepath="$PROJECT_DIR$/../list_parser_dl/.idea/list_parser_dl.iml" />
       <module fileurl="file://$PROJECT_DIR$/../poems_generator/.idea/poems_generator.iml" filepath="$PROJECT_DIR$/../poems_generator/.idea/poems_generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../seq2seq-couplet/.idea/seq2seq-couplet.iml" filepath="$PROJECT_DIR$/../seq2seq-couplet/.idea/seq2seq-couplet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../super_spider/.idea/super_spider.iml" filepath="$PROJECT_DIR$/../super_spider/.idea/super_spider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tensorflow_study/.idea/tensorflow_study.iml" filepath="$PROJECT_DIR$/../tensorflow_study/.idea/tensorflow_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/../transformer/.idea/transformer.iml" filepath="$PROJECT_DIR$/../transformer/.idea/transformer.iml" />
     </modules>
   </component>

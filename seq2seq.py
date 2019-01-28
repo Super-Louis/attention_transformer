@@ -60,7 +60,7 @@ class Decoder():
         if self.mask:
             # in the decoder, it includes two attention layers
             # in the self_attention layer, Q_emb, K_emb, V_emb are the same, and Q_ini, K_ini are the same
-            # in the encoder_decoder layer, Q_emb and Q_ini are from the decoder, and K_emb, V_emb, K_ini are from the encoder
+            # in the encoder_decoder_attention layer, Q_emb and Q_ini are from the decoder, and K_emb, V_emb, K_ini are from the encoder
             Q_emb, K_emb, V_emb, Q_ini, K_ini = inputs
         else:
             Q_emb, K_emb, V_emb = inputs

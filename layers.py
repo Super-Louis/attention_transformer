@@ -149,7 +149,7 @@ class Attention(Layer):
         :return: output tensor
         """
         if self.mask:
-            # Q_emb, K_emb, V_emb are the embedded inputs whit the shape of (batch_size, seq_len, emb_size)
+            # Q_emb, K_emb, V_emb are the embedded inputs with the shape of (batch_size, seq_len, emb_size)
             # Q_ini, K_ini are the initial inputs with the shape of (batch_size, seq_len)
             Q_emb, K_emb, V_emb, Q_ini, K_ini = inputs
         else:
@@ -289,7 +289,7 @@ class LabelSmooth(Layer):
         super(LabelSmooth, self).__init__(**kwargs)
 
     def call(self, inputs, training=None):
-        # only takes effect in training phase
+        # only take effects in training phase
         def smooth_outputs():
             return (1 - self.e) * inputs + self.e / self.K
 
